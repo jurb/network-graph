@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html,
+body {
+    margin: 0;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.label {
+    pointer-events: none;
+    font: 12px "Lato", sans-serif;
+}
+
+.noUi-tooltip,
+.noUi-value,
+text {
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+}
+
+.noUi-connect {
+    background-color: lightgrey !important;
+}
+
+#slider {
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    /* margin: 50px; */
+    max-width: 600px;
+    height: 400px;
+}
+
+#slider-header {
+    margin: auto;
+    position: absolute;
+    top: 8px;
+    left: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+#slider-legend {
+    margin: auto;
+    position: absolute;
+    line-height: 18px;
+    top: 500px;
+    left: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+}
+
+
+#graph {
+    margin: 0;
+    max-height: 600px;
+}
+
+#legend {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+/* Prevent blue selection box around slider handles in Chrome */
+    :focus {
+    outline: none !important;
+}
+/* Prevent text selection of labels */
+
+
+
+.noUi-vertical {
+    width: 10px;
+}
+
+.noUi-vertical .noUi-handle {
+    width: 20px;
+    height: 34px;
+    left: -6px;
+    top: -17px;
+}
+
+.noUi-vertical .noUi-handle:after, .noUi-vertical .noUi-handle:before {
+    width: 14px;
+    height: 1px;
+    left: 3px;
+    top: 14px;
+}
+
+svg text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* stroke: white;
+    stroke-width: .3px;
+    opacity: 0.8; */
+}
+
+/* Pretty but kills performance. Can only set this to whole SVG, not just text or images */
+/* svg {
+    -webkit-filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.2) );
+    filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.2) );
+} */
+
+.noUi-marker-vertical.noUi-marker {
+    width: 5px;
+    height: 1px;
+    margin-top: -1px;
+}
